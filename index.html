@@ -7,11 +7,120 @@
     <meta property="og:title" content="Single Page CV>
     <meta property="og:description" content="Create a single-page CV (Curriculum Vitae) using only HTML">
     <title>Single Page CV</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 2em 0;
+        }
+
+        .cv {
+            width: 40em;
+            margin: auto;
+            box-sizing: border-box;
+            padding: 2em;
+            border: 3px solid black;
+        }
+
+        .title {
+            color: #0f9c0f;
+            font-style: bold;
+        }
+
+        address {
+            font-style: normal;
+        }
+
+        .sect {
+            margin-top: 2em;
+        }
+
+        .sect-label {
+            line-height: 0.1em;
+        }
+
+        .sect-label-title{
+            color: blue;
+        }
+
+        .exp-list {
+            margin-bottom: 40px;
+        }
+    </style>
 </head>
   
 <body>
-  <header>
-    <h1>Your Name</h1>
-  </header>
+<div class="cv">
+<div class="container">
+    <header>
+        <h1>Your Name</h1>
+        <p class="title">Junior Frontend Developer</p>
+    </header>
+    
+      <section>
+            <address>
+                123 Your Street <br>
+                Your City, ST 12345 <br>
+                (123) 456-7890 <br>
+                no_reply@example.com <br>
+            </address>
+      </section>
+    
+      <section class="sect skills">
+            <p class="title">Skills</p>
+            <p>
+                HTML, CSS, JavaScript, Accessibility, Figma to Design, Responsive Web Design,
+                Technical Writing, Presentation        
+            </p>
+      </section>
+
+      <section class="sect edu">
+            <p class="title">Education</p>
+            <div class="sect-label">
+                <p class="sect-label-title">School Name, Location - Degree</p>
+                <p>Month 20xx to Month 20xx</p>
+            </div>
+            <p>List of exciting things you did at university</p>
+      </section>
+
+      <section class="sect exp">
+            <p class="title">Experience</p>
+            <div class="exp-list">
+                <div class="sect-label">
+                    <p class="sect-label-title">Company Name, Location - Job Title</p>
+                    <p>Month 20xx to Month 20xx</p>
+                </div>
+    
+                <ul>
+                    <li>List of achievment</li>
+                    <li>List of achievment</li>
+                    <li>List of achievment</li>
+                </ul>
+    
+                <p>Skills: List of skills used or gained at this company</p>
+            </div>
+
+            <div>
+                <div class="sect-label">
+                    <p class="sect-label-title">Company Name, Location - Job Title</p>
+                    <p>Month 20xx to Month 20xx</p>
+                </div>
+    
+                <ul>
+                    <li>List of achievment</li>
+                    <li>List of achievment</li>
+                    <li>List of achievment</li>
+                </ul>
+    
+                <p>Skills: List of skills used or gained at this company</p>
+            </div>
+      </section>
+
+      <section class="sect internet">
+            <p class="title">Across the Internet</p>
+            <p>Add your LinkedIn, GitHub profile links</p>
+      </section>
+</div>
+</div>
 </body>
 </html>
